@@ -10,7 +10,6 @@ import { useState, useEffect } from "react";
 
 const  PostId = ({ params }) => {
     const [post, setPost] = useState(null)
-    const baseURL = "http://localhost:3000";
 
     const getPostById = async () => {
         try {
@@ -33,7 +32,7 @@ const  PostId = ({ params }) => {
     return (
         <>
         { post ? 
-            <section className='container mx-auto md:px-2 py-16 w-1/2'>
+            <section className='container mx-auto md:px-2 py-16 w-4/5 sm:w-1/2'>
                 <div className='flex justify-center'>
                     <Author />
                 </div>
